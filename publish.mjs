@@ -5,7 +5,7 @@ const origin='https://pin-pitch-studio.cricketrebornacc.chatgpt.site';
 const files=JSON.parse(await readFile('manifest.json','utf8')).filter(f=>f.path!=='index.html');
 async function download(file){
  if(file.path.includes('..')||file.path.startsWith('/'))throw Error('Invalid asset path');
- const dest='site/'+file.path;
+ const dest='site/'+(file.path.startsWith('assets/index-')&&file.path.endsWith('.js')?'assets/site-entry-v2.js':file.path);
  for(let attempt=0;attempt<5;attempt++){
   try{
    const response=await fetch(origin+'/'+file.path);
@@ -18,7 +18,7 @@ async function download(file){
  }
 }
 for(let i=0;i<files.length;i+=6)await Promise.all(files.slice(i,i+6).map(download));
-let html=(await readFile('index.html','utf8')).replaceAll('"/assets/','"/pin-pitch-site/assets/');
+let html=(await readFile('index.html','utf8')).replaceAll('"/assets/','"/pin-pitch-site/assets/').replace(/assets\/index-[^"]+\.js/g,'assets/site-entry-v2.js');
 await writeFile('site/index.html',html);
 await mkdir('site/portfolio',{recursive:true});await writeFile('site/portfolio/index.html',html);
 await writeFile('site/.nojekyll','');
