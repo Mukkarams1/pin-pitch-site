@@ -12,7 +12,7 @@ async function download(file){
    if(!response.ok)throw Error('Asset status '+response.status);
    let bytes=Buffer.from(await response.arrayBuffer());
    if(createHash('sha256').update(bytes).digest('hex')!==file.sha256)throw Error('Checksum mismatch: '+file.path);
-   if(file.path.startsWith('assets/index-')&&file.path.endsWith('.js'))bytes=Buffer.from(bytes.toString().replaceAll('return"/"+','return"/pin-pitch-site/"+'));
+   if(file.path.startsWith('assets/index-')&&file.path.endsWith('.js'))bytes=Buffer.from(bytes.toString().replaceAll('return"/"+','return"/pin-pitch-site/"+').replaceAll('[href^="/"],[src^="/"]','#app [href^="/"],#app [src^="/"]'));
    await mkdir(dirname(dest),{recursive:true});await writeFile(dest,bytes);return;
   }catch(error){if(attempt===4)throw error;await new Promise(resolve=>setTimeout(resolve,3000));}
  }
