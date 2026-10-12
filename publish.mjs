@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
-const origin='https://mukkarams1.github.io/pin-pitch-site/';
+const origin='https://pin-pitch-studio.cricketrebornacc.chatgpt.site/';
 const manifest=JSON.parse(await fs.readFile('manifest.json','utf8'));
 for(const file of manifest){
  if(file.path==='index.html')continue;
@@ -14,3 +14,5 @@ for(const file of manifest){
 const html=(await fs.readFile('index.html','utf8')).replaceAll('"./assets/','"/pin-pitch-site/assets/').replaceAll('"/assets/','"/pin-pitch-site/assets/');
 await fs.mkdir('site/portfolio',{recursive:true});await fs.writeFile('site/index.html',html);await fs.writeFile('site/portfolio/index.html',html);await fs.writeFile('site/.nojekyll','');
 console.log('Published '+manifest.length+' verified files');
+
+
