@@ -1,17 +1,59 @@
 [
   {
+    "path": "assets/authored-fist-60-80.glb",
+    "sha256": "aa9e9fcfd729a3c8a83e2f5c0b0b33a9d50dcb2f89d35cd221c0889d51ed9f25"
+  },
+  {
+    "path": "assets/blender-environment.json",
+    "sha256": "5831df4a6e8f0d2c4bb90633b2af417a3ef19192a382dce2c951c906e48ea328"
+  },
+  {
+    "path": "assets/blender-textures/color.png",
+    "sha256": "243366cd150f23435453859b81ed03600e4ad6a76a3250a03fe21e15903c89bb"
+  },
+  {
+    "path": "assets/blender-textures/metallic.png",
+    "sha256": "8021cc587ece7ce4732c6359917e60396ebcc099728b4281301a1f9192d32834"
+  },
+  {
+    "path": "assets/blender-textures/normal.png",
+    "sha256": "50563ab956cad99fc0db009e12d86463927778f9b26b43a8b69941b617b38c8e"
+  },
+  {
+    "path": "assets/blender-textures/roughness.png",
+    "sha256": "90732817a9081302e973c78d503fb9e424d4d605a7af7a2e2fcf0c1fb09d7f0b"
+  },
+  {
+    "path": "assets/hand-tracking-points.json",
+    "sha256": "67fe74da781239afd6d73500aec9e98ec0eb667437a6054a990898f9539182b2"
+  },
+  {
+    "path": "assets/hands-camera.json",
+    "sha256": "364a430ec8f11ef80ba3ed4f68e02c4cc9b723653e7e4f204acd5eae0a12aef0"
+  },
+  {
+    "path": "assets/hands-interaction.json",
+    "sha256": "88b34ad95f43518befc25dbf8a7929b6067d87824d6e20c93c70cc337aaa08af"
+  },
+  {
+    "path": "assets/hands-scene.glb",
+    "sha256": "8de8ebc147ed8837e07ce715fddb24a81c6899e06d0df13eed56936de873b93d"
+  },
+  {
     "path": "assets/hero-poster.png",
     "sha256": "d3e7ece640a46b0286c2745fa28cac09a51996fb70d95007e70334d0358b6efd"
   },
   {
-    "path": "assets/index-lzh417yU.js",
-    "sha256": "df0e496fd58da7440df226eca8a8aa636539701e67e73856a2cb7479ae58f075",
-    "local": true
+    "path": "assets/index-BTKPiSNb.css",
+    "sha256": "8af19c37f55166ead0dd261cfa86eaa7c7a48f198639d8d6a152c34da07f6237"
   },
   {
-    "path": "assets/index-RfiaGqkc.css",
-    "sha256": "5eef4be3fa4deb2a532a8027fcf0e3b8ec5258c4cdfc6da7e187932eee98d27d",
-    "local": true
+    "path": "assets/index-DyNsRq-O.js",
+    "sha256": "5f30fd5055aec5672c9f484945a96b884620f65d954c70a506d1a892a466ad9f"
+  },
+  {
+    "path": "assets/loading-pin.glb",
+    "sha256": "9023cd7a4df2c63aa3db2e9cdc12582abbf043201ed91a352d567b2b749e8b3c"
   },
   {
     "path": "assets/logo.png",
@@ -19,8 +61,7 @@
   },
   {
     "path": "assets/motion-a3sj5zmn.js",
-    "sha256": "11f2be75561459741488a454669fb26b048799f90e44d4fee6288c765734b1a8",
-    "local": true
+    "sha256": "11f2be75561459741488a454669fb26b048799f90e44d4fee6288c765734b1a8"
   },
   {
     "path": "assets/portfolio/00.webp",
@@ -323,9 +364,12 @@
     "sha256": "eab82624b8908d6ef11746ed981ef7f4e479a952cff783f529ce41feb8c0deca"
   },
   {
-    "path": "assets/scene-Bw2PGB8G.js",
-    "sha256": "70e26115dd7fbc9b15d1dc9fd6fc5272caba9a2d377b17053542d7011e669984",
-    "local": true
+    "path": "assets/realistic-cloud-bank.png",
+    "sha256": "f029a28702b3af4f6e1df5882e12b5995746f1748f0010f670ed76aa2b87a1c8"
+  },
+  {
+    "path": "assets/scene-BSwdrxvX.js",
+    "sha256": "fdb3709fd0ecb84afe8bcf1e34b6da520b22a61249fb95342db768f850603fe0"
   },
   {
     "path": "assets/scene-config.json",
@@ -336,12 +380,15 @@
     "sha256": "1d9b3051da017caec2c05007e73a6fc2f36ea18a901ca22ef16baa6beec80010"
   },
   {
-    "path": "assets/three-Br-VizI4.js",
-    "sha256": "abce7fe7a5f95ae0fdac5e51f2f5ba84b0b435a34ac63511351029b5307bfefe",
-    "local": true
+    "path": "assets/sunset-cloud-bank.png",
+    "sha256": "d0cbfbedc10343a7e61f3f5fcc602d12c9ee2f9eb73e8425cefce7e214bfdc51"
+  },
+  {
+    "path": "assets/three-CN9tpKG-.js",
+    "sha256": "70fa0586792fb7ced093ff7f73b68d09059eae0170af463b1ccd7d0bcd135049"
   },
   {
     "path": "index.html",
-    "sha256": "ece9b9ff7a5a00a44b6bc469ab15dbd26a6488fa2f8b4508714c5eefffcbf393"
+    "sha256": "ca32f22ceb9b9b1666b0165b15e15f9323cab1122ca2d9f5c2816bb9eee3ea6e"
   }
 ]
